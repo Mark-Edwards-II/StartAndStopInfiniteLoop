@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Example</title>
+    <script>
+        function startRequest() {
+            fetch('/start')
+                .then(response => {
+                    // Handle the response if needed
+                })
+                .catch(error => {
+                    // Handle any errors that occur during the request
+                });
+        }
+
+        function stopRequest() {
+            fetch('/stop')
+                .then(response => {
+                    // Handle the response if needed
+                })
+                .catch(error => {
+                    // Handle any errors that occur during the request
+                });
+        }
+    </script>
+</head>
+<body>
+    <button onmousedown="startRequest()" onmouseup="stopRequest()">Click Me</button>
+</body>
+</html>
